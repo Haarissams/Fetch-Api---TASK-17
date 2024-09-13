@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Cards with Weather Info</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Container for flag images */
+        .flag-container {
+            width: 100px; /* Fixed width for the flag container */
+            height: 60px; /* Fixed height for the flag container */
+            overflow: hidden; /* Hide any overflow */
+            display: flex; /* Flexbox for centering the image */
+            justify-content: center; /* Center the image horizontally */
+            align-items: center; /* Center the image vertically */
+            border-radius: 5px; /* Optional: rounded corners for the container */
+            background-color: #f8f9fa; /* Optional: background color for better visibility */
+            border: 1px solid #ddd; /* Optional: border for the container */
+        }
+
+        .flag-img {
+            width: 100%; /* Make the image fill the container width */
+            height: auto; /* Maintain aspect ratio */
+            max-height: 100%; /* Ensure the image does not exceed container height */
+            object-fit: cover; /* Crop the image to fit the container */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row" id="countryCards">
+            <!-- Country cards will be dynamically added here -->
+        </div>
+    </div>
+
+    <!-- Bootstrap and JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Your custom script -->
+    <script src="script.js"></script>
+</body>
+</html>
