@@ -14,7 +14,7 @@ async function fetchCountryData() {
 
 // Function to fetch weather data
 async function fetchWeatherData(lat, lon) {
-    const apiKey = '880c87d2809e3ae07cb121152b2de075'; // Replace with your OpenWeatherMap API key
+    const apiKey = 'd8e301ff74fd2adfde32d003e9f7a6a2'; // Replace with your OpenWeatherMap API key
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
 
     try {
